@@ -68,6 +68,6 @@ module.exports = {
       all: 'All',
       online: 'Online',
       stores: 'Stores',
-    }
-  }
+    },
+  },
 }

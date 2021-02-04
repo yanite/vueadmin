@@ -8,7 +8,7 @@ module.exports = {
       manager: '仓库管理员',
       approval: '审批人员',
       date: '生效日期',
-      type: '仓库类型'
+      type: '仓库类型',
     },
     HK: {
       input: '請輸入',
@@ -29,6 +29,6 @@ module.exports = {
       approval: 'Approval Person',
       date: 'Effective Date',
       type: 'Repository Type',
-    }
-  }
+    },
+  },
 }

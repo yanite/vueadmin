@@ -6,7 +6,8 @@ module.exports = {
   },
   multiPage: true,
   animate: {
+    disabled: true,
     name: 'lightSpeed',
-    direction: 'left'
-  }
+    direction: 'left',
+  },
 }

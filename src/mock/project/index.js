@@ -5,9 +5,9 @@ const projectArr = Mock.mock({
   'list|6': [
     {
       logo: '@LOGO',
-      desc: '@SAYING'
-    }
-  ]
+      desc: '@SAYING',
+    },
+  ],
 }).list
 
 Mock.mock('/project', 'get', () => {

@@ -17,7 +17,7 @@ module.exports = {
       note: '确认转账后，资金将直接打入对方账户，无法退回。',
       success: '支付完成',
       doAgain: '再转一笔',
-      bill: '查看账单'
+      bill: '查看账单',
     },
     HK: {
       pageDesc: '將一個冗長或用戶不熟悉的表單任務分成多個步驟，指導用戶完成。',
@@ -36,10 +36,11 @@ module.exports = {
       note: '確認轉賬後，現金將直接打入對方賬戶，無法退回。',
       success: '支付完成',
       doAgain: '再轉一筆',
-      bill: '查看賬單'
+      bill: '查看賬單',
     },
     US: {
-      pageDesc: 'Divide a long or unfamiliar form task into several steps to guide the user to complete it.',
+      pageDesc:
+        'Divide a long or unfamiliar form task into several steps to guide the user to complete it.',
       input: 'Fill transfer information',
       confirm: 'Confirm transfer information',
       complete: 'Complete',
@@ -52,10 +53,11 @@ module.exports = {
       nextStep: 'Next',
       preStep: 'Back',
       submit: 'Submit',
-      note: 'After confirming the transfer, the funds will be directly transferred into the other party\'s account and cannot be returned.',
+      note:
+        "After confirming the transfer, the funds will be directly transferred into the other party's account and cannot be returned.",
       success: 'Payment successful',
       doAgain: 'Do Again',
-      bill: 'Check the bill'
-    }
-  }
+      bill: 'Check the bill',
+    },
+  },
 }

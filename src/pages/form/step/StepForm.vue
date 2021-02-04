@@ -7,7 +7,11 @@
     </a-steps>
     <div class="content">
       <step1 v-if="current === 0" @nextStep="nextStep"></step1>
-      <step2 v-if="current === 1" @nextStep="nextStep" @prevStep="prevStep"></step2>
+      <step2
+        v-if="current === 1"
+        @nextStep="nextStep"
+        @prevStep="prevStep"
+      ></step2>
       <step3 v-if="current === 2" @prevStep="prevStep" @finish="finish"></step3>
     </div>
   </a-card>
@@ -21,38 +25,38 @@ import Step3 from './Step3'
 export default {
   name: 'StepForm',
   i18n: require('./i18n'),
-  components: {Step1, Step2, Step3},
-  data () {
+  components: { Step1, Step2, Step3 },
+  data() {
     return {
-      current: 0
+      current: 0,
     }
   },
   computed: {
     desc() {
       return this.$t('pageDesc')
-    }
+    },
   },
   methods: {
-    nextStep () {
+    nextStep() {
       if (this.current < 2) {
         this.current += 1
       }
     },
-    prevStep () {
+    prevStep() {
       if (this.current > 0) {
         this.current -= 1
       }
     },
-    finish () {
+    finish() {
       this.current = 0
-    }
-  }
+    },
+  },
 }
 </script>
 
 <style lang="less" scoped>
-  .steps{
-    max-width: 950px;
-    margin: 16px auto;
-  }
+.steps {
+  max-width: 950px;
+  margin: 16px auto;
+}
 </style>

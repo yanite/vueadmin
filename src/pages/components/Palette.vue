@@ -1,6 +1,11 @@
 <template>
   <div style="text-align: center; margin-top: 48px">
-    <color-checkbox-group :defaultValues="['1', '3', '4']" @change="changeColor" :multiple="true" style="display: inline-block">
+    <color-checkbox-group
+      :defaultValues="['1', '3', '4']"
+      @change="changeColor"
+      :multiple="true"
+      style="display: inline-block"
+    >
       <color-checkbox color="rgb(245, 34, 45)" value="1" />
       <color-checkbox color="rgb(250, 84, 28)" value="2" />
       <color-checkbox color="rgb(250, 173, 20)" value="3" />
@@ -15,7 +20,7 @@
       <color-checkbox color="rgb(256, 256, 0)" value="12" />
     </color-checkbox-group>
     <div></div>
-    <div class="view-color" :style="{backgroundColor: color}"/>
+    <div class="view-color" :style="{ backgroundColor: color }" />
   </div>
 </template>
 
@@ -26,40 +31,40 @@ const ColorCheckboxGroup = ColorCheckbox.Group
 
 export default {
   name: 'Palette',
-  data () {
+  data() {
     return {
-      color: 'rgb(245, 34, 45)'
+      color: 'rgb(245, 34, 45)',
     }
   },
-  components: {ColorCheckbox, ColorCheckboxGroup},
+  components: { ColorCheckbox, ColorCheckboxGroup },
   methods: {
-    changeColor (values, colors) {
+    changeColor(values, colors) {
       this.color = this.calculateColor(colors)
     },
-    calculateColor (colors) {
+    calculateColor(colors) {
       let red = 0
       let green = 0
       let blue = 0
       let values
-      colors.forEach(color => {
+      colors.forEach((color) => {
         values = color.split('(')[1].split(')')[0].split(',')
         red = Math.max(red, parseInt(values[0]))
         green += Math.max(green, parseInt(values[1]))
         blue += Math.max(blue, parseInt(values[2]))
       })
       return 'rgb(' + red + ',' + green + ',' + blue + ')'
-    }
-  }
+    },
+  },
 }
 </script>
 
 <style lang="less" scoped>
-  .view-color{
-    margin-top: 48px;
-    display: inline-block;
-    height: 96px;
-    width: 96px;
-    border-radius: 48px;
-    border: 1px dashed gray;
-  }
+.view-color {
+  margin-top: 48px;
+  display: inline-block;
+  height: 96px;
+  width: 96px;
+  border-radius: 48px;
+  border: 1px dashed gray;
+}
 </style>

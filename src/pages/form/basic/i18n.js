@@ -1,7 +1,8 @@
 module.exports = {
   messages: {
     CN: {
-      pageDesc: '表单页用于向用户收集或验证信息，基础表单常见于数据项较少的表单场景。',
+      pageDesc:
+        '表单页用于向用户收集或验证信息，基础表单常见于数据项较少的表单场景。',
       title: '标题',
       titleInput: '给目标起个名字',
       date: '起止日期',
@@ -23,10 +24,11 @@ module.exports = {
       save: '保存',
       colleague1: '同事甲',
       colleague2: '同事乙',
-      colleague3: '同事丙'
+      colleague3: '同事丙',
     },
     HK: {
-      pageDesc: '表單頁用於向用戶收集或驗證信息，基礎表單常見於數據項較少的表單場景。',
+      pageDesc:
+        '表單頁用於向用戶收集或驗證信息，基礎表單常見於數據項較少的表單場景。',
       title: '標題',
       titleInput: '給目標起個名字',
       date: '起止日期',
@@ -48,10 +50,11 @@ module.exports = {
       save: '保存',
       colleague1: '同事甲',
       colleague2: '同事乙',
-      colleague3: '同事丙'
+      colleague3: '同事丙',
     },
     US: {
-      pageDesc: 'Form pages are used to collect or verify information to users, and basic forms are common in scenarios where there are fewer data items.',
+      pageDesc:
+        'Form pages are used to collect or verify information to users, and basic forms are common in scenarios where there are fewer data items.',
       title: 'Title',
       titleInput: 'Give the target a name',
       date: 'Start and end date',
@@ -60,9 +63,11 @@ module.exports = {
       metrics: 'Metrics',
       metricsInput: 'Please enter a metric',
       customer: 'Customer',
-      customerInput: 'Please describe your customer service, internal customers directly @ Name / job number',
+      customerInput:
+        'Please describe your customer service, internal customers directly @ Name / job number',
       critics: 'Inviting critics',
-      criticsInput: 'Please direct @ Name / job number, you can invite up to 5 people',
+      criticsInput:
+        'Please direct @ Name / job number, you can invite up to 5 people',
       weight: 'Weight',
       disclosure: 'Target disclosure',
       disclosureDesc: 'Customers and invitees are shared by default',
@@ -73,7 +78,7 @@ module.exports = {
       save: 'Save',
       colleague1: 'Colleague A',
       colleague2: 'Colleague B',
-      colleague3: 'Colleague C'
-    }
-  }
+      colleague3: 'Colleague C',
+    },
+  },
 }

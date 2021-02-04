@@ -13,7 +13,7 @@ module.exports = {
         number: '工号',
         department: '所属部门',
         operation: '操作',
-      }
+      },
     },
     HK: {
       add: '添加',
@@ -28,7 +28,7 @@ module.exports = {
         number: '工號',
         department: '所屬部門',
         operation: '操作',
-      }
+      },
     },
     US: {
       add: 'add',
@@ -43,7 +43,7 @@ module.exports = {
         number: 'Job Number',
         department: 'Department',
         operation: 'Operation',
-      }
-    }
-  }
+      },
+    },
+  },
 }

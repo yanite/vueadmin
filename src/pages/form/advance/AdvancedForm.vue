@@ -10,7 +10,9 @@
       <user-form />
     </a-card>
     <footer-tool-bar>
-      <a-button type="primary" @click="validate" :loading="loading">{{$t('submit')}}</a-button>
+      <a-button type="primary" @click="validate" :loading="loading">{{
+        $t('submit')
+      }}</a-button>
     </footer-tool-bar>
   </div>
 </template>
@@ -23,20 +25,20 @@ import FooterToolBar from '@/components/tool/FooterToolBar'
 
 export default {
   name: 'AdvancedForm',
-  components: {FooterToolBar, UserForm, TaskForm, RepositoryForm},
+  components: { FooterToolBar, UserForm, TaskForm, RepositoryForm },
   i18n: require('./i18n'),
-  data () {
+  data() {
     return {
-      loading: false
+      loading: false,
     }
   },
   computed: {
     desc() {
       return this.$t('desc')
-    }
+    },
   },
   methods: {
-    validate () {
+    validate() {
       this.$refs.repository.form.validateFields((err, values) => {
         if (!err) {
           console.log('Received values of form: ', values)
@@ -47,13 +49,13 @@ export default {
           console.log('Received values of form: ', values)
         }
       })
-    }
-  }
+    },
+  },
 }
 </script>
 
 <style lang="less" scoped>
-  .card{
-    margin-bottom: 24px;
-  }
+.card {
+  margin-bottom: 24px;
+}
 </style>

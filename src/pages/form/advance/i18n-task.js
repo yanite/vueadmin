@@ -29,6 +29,6 @@ module.exports = {
       duty: 'Duty Person',
       time: 'Reminder Time',
       type: 'Task Type',
-    }
-  }
+    },
+  },
 }

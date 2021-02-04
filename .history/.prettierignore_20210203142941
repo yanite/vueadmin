@@ -1,0 +1,5 @@
+build
+.history
+.github
+docs
+node_module

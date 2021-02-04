@@ -3,7 +3,7 @@ import '@/mock/extend'
 
 const welcome = Mock.mock({
   timeFix: '@TIMEFIX',
-  message: '@WELCOME'
+  message: '@WELCOME',
 })
 
 Mock.mock('/user/welcome', 'get', () => {

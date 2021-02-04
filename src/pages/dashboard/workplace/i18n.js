@@ -10,7 +10,7 @@ module.exports = {
       dynamic: '动态',
       degree: '指数',
       team: '团队',
-      add: '添加'
+      add: '添加',
     },
     HK: {
       project: '項目數',
@@ -22,7 +22,7 @@ module.exports = {
       dynamic: '動態',
       degree: '指數',
       team: '團隊',
-      add: '添加'
+      add: '添加',
     },
     US: {
       project: 'Project',
@@ -34,7 +34,7 @@ module.exports = {
       dynamic: 'Dynamic',
       degree: 'degree',
       team: 'Team',
-      add: 'Add'
+      add: 'Add',
     },
-  }
+  },
 }
