@@ -208,7 +208,7 @@ export default {
           delete f.parentId
           delete f.alwaysShow
           f.meta['authority'] = { permission: '*' }
-          f.meta['pAuthorities'] = [{ permission: '*' }]
+          f.meta['pAuthorities'] = { permission: '*' }
           if (f.component === 'layout/Layout') {
             f.component = PageView
             // 添加权限
@@ -222,7 +222,7 @@ export default {
           } catch (error) {
             // console.log('load route f.component error, uing /layouts/StandsView', f.component)
             f.component = BlankView
-            f.link = '/form/base'
+            f.redirect = '/pages/list/CardList'
           }
         }
       }

@@ -222,7 +222,8 @@ export default {
           } catch (error) {
             // console.log('load route f.component error, uing /layouts/StandsView', f.component)
             f.component = BlankView
-            f.link = '/form/base'
+            f.query = { redirect: '/form/base' }
+            f.redirect = '/form/base'
           }
         }
       }

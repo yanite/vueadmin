@@ -194,7 +194,7 @@ export default {
         roleIds: data.roleList,
         roleType: data.roleType
       })
-      data.menuList.filter((e, i) => { e.path = 'base_' + i })
+      data.menuList.filter((e, i) => { e.path = 'views' + i })
       this.processRoute(data.menuList)
       Cookie.set('Authorization', 'true')
       // 获取路由配置
@@ -204,11 +204,6 @@ export default {
     processRoute(menus) {
       const filter = (f) => {
         if (typeof (f.component) === 'string') {
-          delete f.menuId
-          delete f.parentId
-          delete f.alwaysShow
-          f.meta['authority'] = { permission: '*' }
-          f.meta['pAuthorities'] = [{ permission: '*' }]
           if (f.component === 'layout/Layout') {
             f.component = PageView
             // 添加权限
@@ -222,7 +217,7 @@ export default {
           } catch (error) {
             // console.log('load route f.component error, uing /layouts/StandsView', f.component)
             f.component = BlankView
-            f.link = '/form/base'
+            // !f.children && (f.redirect = '/pages/list/CardList')
           }
         }
       }
